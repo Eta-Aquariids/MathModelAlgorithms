@@ -1,7 +1,7 @@
 ---
 title: "Floyd-Warshall 多源最短路径"
 type: "algorithm"
-category: "图论算法"
+category: "优化模型"
 tags: [图论, 多源最短路径, Floyd, 动态规划, 任意两点间最短路径]
 difficulty: "⭐⭐"
 created: 2026-07-23

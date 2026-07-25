@@ -1,7 +1,7 @@
 ---
 title: "Dijkstra 最短路径算法"
 type: "algorithm"
-category: "图论算法"
+category: "优化模型"
 tags: [图论, 最短路径, Dijkstra, 贪心算法, 单源最短路径, 非负权图]
 difficulty: "⭐⭐"
 created: 2026-07-23

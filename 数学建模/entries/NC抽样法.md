@@ -1,7 +1,7 @@
 ---
 title: "NC抽样法（计数标准型抽样检验）"
 type: "algorithm"
-category: "统计分析"
+category: "统计与时间序列"
 tags: [抽样检验, 计数抽样, 质量控制, OC曲线, 生产方风险, 使用方风险, AQL, LQL]
 difficulty: "⭐⭐"
 created: 2026-07-23
