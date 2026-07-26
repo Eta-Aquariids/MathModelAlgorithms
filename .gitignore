@@ -1,3 +1,8 @@
+# 个人工具（不上传公开仓库）
+templates/
+scripts/
+数学建模/templates/
+
 # OS files
 .DS_Store
 Thumbs.db
@@ -7,5 +12,5 @@ Thumbs.db
 *.swo
 *~
 
-# Temp
-tools/update_index.sh
+# Output
+pdf_output/
