@@ -47,13 +47,54 @@ def convert_single(filepath, output_dir):
     name = filepath.stem
     output_path = output_dir / f"{name}.pdf"
     
-    cmd = [
+    # CSS 样式：中文字体 + 代码块 + 表格样式
+    css = """
+    <style>
+    body { font-family: 'WenQuanYi Micro Hei', 'Noto Sans CJK SC', sans-serif; font-size: 14px; line-height: 1.7; }
+    h1, h2, h3, h4 { font-family: 'WenQuanYi Micro Hei', 'Noto Sans CJK SC', sans-serif; }
+    code { font-family: 'Courier New', monospace; font-size: 13px; background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+    pre { background: #f8f8f8; border: 1px solid #ddd; border-radius: 5px; padding: 12px; overflow-x: auto; }
+    pre code { background: none; padding: 0; }
+    table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+    th { background: #f0f0f0; font-weight: bold; }
+    blockquote { border-left: 4px solid #4a90d9; margin: 10px 0; padding: 8px 15px; background: #f9f9f9; }
+    img { max-width: 100%; }
+    .math { color: #333; }
+    </style>
+    </head>
+    """
+    
+    # 先生成 HTML，再转 PDF（以便嵌入 CSS）
+    html_path = output_path.with_suffix('.html')
+    cmd_html = [
         'pandoc', str(filepath),
-        '-f', 'markdown',
-        '--mathml',
-        '--pdf-engine=wkhtmltopdf',
-        '-o', str(output_path)
+        '-f', 'markdown', '-t', 'html',
+        '--mathml', '--standalone',
+        '-o', str(html_path)
     ]
+    
+    subprocess.run(cmd_html, capture_output=True, text=True, timeout=30)
+    
+    # 在 </head> 前插入 CSS
+    if html_path.exists():
+        html_content = html_path.read_text(encoding='utf-8')
+        html_content = html_content.replace('</head>', css)
+        html_path.write_text(html_content, encoding='utf-8')
+    
+    cmd = [
+        'wkhtmltopdf',
+        '--encoding', 'utf-8',
+        '--enable-local-file-access',
+        str(html_path),
+        str(output_path)
+    ]
+    
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+    
+    # 清理临时 HTML
+    if html_path.exists():
+        html_path.unlink()
     
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
     
