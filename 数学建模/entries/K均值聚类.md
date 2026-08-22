@@ -12,7 +12,9 @@ source: "MacQueen (1967)"
 
 **K-Means** 是最经典的**划分聚类**算法，将 $n$ 个样本划分为 $k$ 个簇，使每个样本到其簇中心的**距离平方和（SSE）最小**：
 
-$$\text{SSE} = \sum_{i=1}^{k} \sum_{\mathbf{x} \in C_i} \|\mathbf{x} - \boldsymbol{\mu}_i\|^2$$
+$$
+\text{SSE} = \sum_{i=1}^{k} \sum_{\mathbf{x} \in C_i} \|\mathbf{x} - \boldsymbol{\mu}_i\|^2
+$$
 
 其中 $\boldsymbol{\mu}_i$ 是簇 $C_i$ 的质心（均值向量）。
 
