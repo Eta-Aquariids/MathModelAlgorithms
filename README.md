@@ -12,7 +12,7 @@ MathModelAlgorithms/
 ├── README.md                       # 本文件
 └── 📐 数学建模/
     ├── INDEX.md                    # 板块索引（按算法分类）
-    └── entries/                    # 算法条目（共 27 条）
+    └── entries/                    # 算法条目（共 28 条）
 ```
 
 ## 🗂️ 算法分类
@@ -28,13 +28,14 @@ MathModelAlgorithms/
 |------|------|------|
 | [灰色预测模型 (GM(1,1))](数学建模/entries/灰色预测模型.md) | ⭐⭐ | 灰色预测 GM(1,1) 模型 是灰色系统理论的核心，适用于小样本、贫信息的短期预测。用"累加生成"将杂乱原始数据转化为... |
 | [线性回归 (Linear Regression)](数学建模/entries/线性回归.md) | ⭐ | 线性回归 假设因变量 y 与自变量 x1, ldots, xp 之间存在线性关系： |
-### ⚡ 优化模型（10条）
+### ⚡ 优化模型（11条）
 | 算法 | 难度 | 说明 |
 |------|------|------|
 | [Dijkstra 最短路径算法](数学建模/entries/Dijkstra最短路径.md) | ⭐⭐ | Dijkstra 算法 求解单源最短路径问题——给定一个起点，计算它到图中所有其他节点的最短距离。适用于边权非负的图。 |
 | [Floyd-Warshall 多源最短路径](数学建模/entries/Floyd多源最短路径.md) | ⭐⭐ | Floyd-Warshall 算法 求解任意两点之间的最短路径，基于动态规划思想。 |
 | [动态规划 (Dynamic Programming, DP)](数学建模/entries/动态规划.md) | ⭐⭐⭐ | 动态规划（Dynamic Programming, DP） 是一种将多阶段决策问题分解为一系列单阶段子问题的优化方法，由... |
 | [匈牙利算法（指派问题）](数学建模/entries/匈牙利算法.md) | ⭐⭐⭐ | 匈牙利算法 求解指派问题——将 n 项任务分配给 n 个人，每人做一项，使总成本最小（或总效益最大）。 |
+| [多目标优化 (Multi-Objective Optimization)](数学建模/entries/多目标优化.md) | ⭐⭐⭐ | 多目标优化 处理多个目标同时需要优化的问题，目标之间往往相互矛盾，只能找到一组 Pareto 最优解。 |
 | [整数规划 (Integer Programming, IP)](数学建模/entries/整数规划.md) | ⭐⭐⭐ | 整数规划（Integer Programming, IP） 是线性规划的扩展，要求部分或全部决策变量取整数。当变量表示人... |
 | [最小生成树 (Prim & Kruskal)](数学建模/entries/最小生成树.md) | ⭐⭐ | 最小生成树 (MST) 在一个带权无向连通图中找一棵包含所有顶点的树，使所有边的权值之和最小。 |
 | [有向无环图 (DAG) 与拓扑排序](数学建模/entries/有向无环图与拓扑排序.md) | ⭐⭐ | 有向无环图 (Directed Acyclic Graph, DAG) 是没有环的有向图，是图论中最常用的结构之一，因为... |

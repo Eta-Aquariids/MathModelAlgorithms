@@ -25,6 +25,7 @@
 | [Floyd-Warshall 多源最短路径](./entries/Floyd多源最短路径.md) | ⭐⭐ | Floyd-Warshall 算法 求解任意两点之间的最短路径，基于动态规划思想。 |
 | [动态规划 (Dynamic Programming, DP)](./entries/动态规划.md) | ⭐⭐⭐ | 动态规划（Dynamic Programming, DP） 是一种将多阶段决策问题分解为一系列单阶段子问题的优化方法，由... |
 | [匈牙利算法（指派问题）](./entries/匈牙利算法.md) | ⭐⭐⭐ | 匈牙利算法 求解指派问题——将 n 项任务分配给 n 个人，每人做一项，使总成本最小（或总效益最大）。 |
+| [多目标优化 (Multi-Objective Optimization)](./entries/多目标优化.md) | ⭐⭐⭐ | 多目标优化 处理多个目标同时需要优化的问题，目标之间往往相互矛盾，只能找到一组 Pareto 最优解。 |
 | [整数规划 (Integer Programming, IP)](./entries/整数规划.md) | ⭐⭐⭐ | 整数规划（Integer Programming, IP） 是线性规划的扩展，要求部分或全部决策变量取整数。当变量表示人... |
 | [最小生成树 (Prim & Kruskal)](./entries/最小生成树.md) | ⭐⭐ | 最小生成树 (MST) 在一个带权无向连通图中找一棵包含所有顶点的树，使所有边的权值之和最小。 |
 | [有向无环图 (DAG) 与拓扑排序](./entries/有向无环图与拓扑排序.md) | ⭐⭐ | 有向无环图 (Directed Acyclic Graph, DAG) 是没有环的有向图，是图论中最常用的结构之一，因为... |
@@ -61,7 +62,7 @@
 
 ## 📊 板块统计
 
-- 算法总数: **27**
+- 算法总数: **28**
 
 ---
 
