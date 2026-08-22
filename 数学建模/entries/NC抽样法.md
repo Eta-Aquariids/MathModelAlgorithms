@@ -17,7 +17,7 @@ source: "2024年数学建模B题 / 统计质量控制 (GB/T 13262)"
 从批量为 $N$ 的产品中随机抽取 $n$ 个样品进行检测。设样品中的不合格品数为 $d$，预先设定合格判定数 $c$（也称接收数），则判定规则为：
 
 $$
-\boxed{\begin{cases}
+\begin{cases
 d \leq c & \Rightarrow \text{接收该批} \\
 d > c & \Rightarrow \text{拒收该批}
 \end{cases}}

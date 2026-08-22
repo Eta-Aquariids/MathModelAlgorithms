@@ -23,7 +23,7 @@ $$
 压缩到二维空间：
 
 $$
-\boxed{dist[i][j] = \min(dist[i][j],\; dist[i][k] + dist[k][j])}
+dist[i][j] = \min(dist[i][j],\; dist[i][k] + dist[k][j])
 $$
 
 三层循环，$k$ 在外层：
